@@ -1,0 +1,96 @@
+<nav>
+    <div class="white nav-wrapper">
+      <ul class="right hide-on-med-and-down">
+        <li><a routerLink="/Privacy-Policy" > <span class="linktext"> Privacy Policy</span></a></li>
+  <!-- <li><a >login</a></li>
+        <li><a><span> <i class="material-icons">account_circle</i></span> </a> </li>
+        <li><a><i class="material-icons">search</i></a></li> 
+    -->
+      </ul>
+    </div>
+  </nav>
+<div class="navbar "> 
+    <nav class="white header">
+        <div class="container"> 
+            <div class="nav-wrapper">
+                    <img  routerLink="/home" [src]="logo" height="100px" class="left logo" >
+               <a  class="brand-logo"> </a>  
+              <a data-target="mobile-nav" class="sidenav-trigger"> 
+                   <i class="material-icons"> <span class="">menu</span> </i> 
+              </a> 
+        
+        <ul class="right hide-on-med-and-down">
+        
+                <li>
+                     <a class='dropdown-trigger' data-target='topDestinations'>
+                         <span class="black-text litext">Top Destinations
+                        </span><i class="material-icons right">arrow_drop_down</i>
+                    </a>
+
+                </li>
+                <li>
+                     <a class='dropdown-trigger' data-target='customizedTour' > <span class="  black-text litext">Customized Tour </span><i class="material-icons right">arrow_drop_down</i></a>
+                 </li>
+                 <li>
+                     <a href="#popular"> <span class="  black-text litext"> Special Offers</span></a>
+                </li>
+        </ul>
+        </div>
+        </div>
+         
+    </nav>
+    
+</div>
+
+<ul class="sidenav card-panel green lighten-5" id="mobile-nav">
+        <li>
+                <a class='dropdown-trigger' data-target='topDestinations2'>
+                    <span class="black-text litext">Top Destinations</span>
+               </a>
+
+           <hr>
+           </li>
+           <li>
+                <a class='dropdown-trigger' data-target='customizedTour2' > 
+                    <span class="  black-text litext">Customized Tour </span>
+                </a>
+           <hr>
+            </li>
+            <li>
+                <a href="#popular"> <span class="  black-text litext"> Special Offers</span></a>
+          
+           <hr> </li>
+</ul>
+
+
+<!--top destination Dropdown Structure -->
+<ul id='topDestinations' class='dropdown-content'>
+  <li class="dropdawnitem "><a class="destinationtext" routerLink="/top-Destinations/south-africa"><i class="material-icons">place</i>South Africa</a></li>
+  <li class="dropdawnitem"><a class="destinationtext" routerLink="/top-Destinations/east-africa"><i class="material-icons">place</i>East Africa</a></li>
+  <li class="dropdawnitem"><a  class="destinationtext" routerLink="/top-Destinations/ethiopia"><i class="material-icons">place</i>Ethiopia</a></li>
+</ul>
+      
+
+<!-- Dropdown Structure -->
+<ul id='customizedTour'  class='dropdown-content'>
+    <li class="dropdawnitem"><a class="destinationtext" routerLink="/customized-Tour/experiance"><i class="material-icons">explore</i>Experiance</a></li>
+    <li class="dropdawnitem"><a class="destinationtext" routerLink="/customized-Tour/romantic"><i class="material-icons">explore</i>Romantic</a></li>
+    <li class="dropdawnitem"><a class="destinationtext" routerLink="/customized-Tour/safari"><i class="material-icons">explore</i>Safari</a></li>
+    <li class="dropdawnitem"><a class="destinationtext" routerLink="/customized-Tour/transit"><i class="material-icons">explore</i>Transit Tour</a></li>
+      </ul>
+        
+  <!--top destination Dropdown Structure -->
+<ul id='topDestinations2' class='dropdown-content'>
+        <li class="dropdawnitem"><a class="destinationtext" routerLink="/top-Destinations/south-africa"><i class="material-icons">place</i>South Africa</a></li>
+        <li class="dropdawnitem"><a class="destinationtext" routerLink="/top-Destinations/east-africa"><i class="material-icons">place</i>East Africa</a></li>
+        <li class="dropdawnitem"><a  class="destinationtext" routerLink="/top-Destinations/ethiopia"><i class="material-icons">place</i>Ethiopia</a></li>
+      </ul>
+            
+      
+      <!-- Dropdown Structure -->
+      <ul id='customizedTour2'  class='dropdown-content'>
+          <li class="dropdawnitem"><a class="destinationtext" routerLink="/customized-Tour/experiance"><i class="material-icons">explore</i>Experiance</a></li>
+          <li class="dropdawnitem"><a class="destinationtext" routerLink="/customized-Tour/romantic"><i class="material-icons">explore</i>Romantic</a></li>
+          <li class="dropdawnitem"><a class="destinationtext" routerLink="/customized-Tour/safari"><i class="material-icons">explore</i>Safari</a></li>
+          <li class="dropdawnitem"><a class="destinationtext" routerLink="/customized-Tour/transit"><i class="material-icons">explore</i>Transit Tour</a></li>
+            </ul>

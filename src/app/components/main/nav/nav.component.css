@@ -1,0 +1,39 @@
+.header {
+    border-bottom: 5px solid #1B5E20;
+    
+    
+      }
+
+      .nav-wrapper{
+
+        padding: 5px;
+      }
+      .logo{
+          margin: -8ex;
+
+          padding-left: 50px;
+      }
+ .dropdawnitem:hover { 
+  background-color:#2E7D32;
+  text-decoration-color:white;
+
+ }
+
+ .destinationtext:hover{
+  color:white;
+ }
+
+ .sidenav-trigger,.logo:hover{
+   cursor: pointer;
+ }
+ 
+ .litext{
+   color: black;
+   font-size: 16pt;
+   font-weight: medium;
+ }
+
+ .linktext{
+  font-size: 10pt;
+  font-weight: medium;
+}

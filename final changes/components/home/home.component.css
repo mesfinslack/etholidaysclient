@@ -1,0 +1,45 @@
+.bg {
+    /*background-image: url(assets/images/g2.jpg);*/
+    background-size: cover;
+    /* width: 160px;
+    height: 160px;
+    border: 2px solid;
+    color: pink;
+    resize: both;
+    overflow: scroll; */
+  }
+.opacity{
+  
+    /* opacity: 1;
+    filter: alpha(opacity=10); /* For IE8 and earlier */
+      
+
+}
+  /* style="background-image: url(&quot;assets/images/g2.jpg&quot;); height: 100%; " */
+
+
+  .padding{
+padding-top: 0px;
+  margin-top: -1ex; 
+  }
+  .backcolor{
+background-color: transparent;
+-webkit-tap-highlight-color: red;
+/* opacity: 5; */
+  }
+
+  .tabitem{
+font-variant-caps: small-caps;
+    /*/background-color: brown; */
+  }
+
+.roboto2{
+  font-family: 'Roboto Slab', serif;
+}
+
+.bld{
+  
+  font-size: 15pt;
+  font-weight: bold;
+}
+

@@ -1,0 +1,174 @@
+
+       
+   <form  [formGroup]="searchEnquireForm" (ngSubmit)="onSubmit()" novalidate >
+   <div class="container">
+       <div class="modal-content">
+    <h3>Package Enquiry</h3>
+<section>
+    <div formGroupName="personalInformation">
+    <h5>Personal Information: </h5>
+    <div class="row " >
+        <div class="input-field col s10 m4 l4">
+          <i class="material-icons prefix">account_circle</i>
+          <input formControlName="firstName" id="FirstName"  type="text" class="validate">
+          <label for="FirstName">First Name</label>
+          <div *ngIf="firstName.invalid && firstName.touched"
+                class="alert ">
+                <div *ngIf="firstName.errors.required" class="text">
+                  Name is required
+                </div>
+          </div>
+        </div>
+        <div class="input-field col s10 m4 l4">
+          <i class="material-icons prefix">account_circle</i>
+          <input  formControlName="lastName" id="LastName" type="text" class="validate">
+          <label for="LastName">Last Name</label>
+          <div *ngIf="lastName.invalid && lastName.touched"
+                class="alert alert-danger text">
+                <div *ngIf="lastName.errors.required" class="text">
+                        last Name is required.
+                </div>
+          </div>
+        </div>
+          <div class="input-field col s10 m4 l4">
+              <i class="material-icons prefix">country</i>
+            <input  formControlName="nationality" id="Nationality" type="text" class="validate">
+            <label for="Nationality">Nationality</label>
+            <div *ngIf="nationality.invalid && nationality.touched"
+                class="alert alert-danger">
+                <div *ngIf="nationality.errors.required" class="text">
+                        Nationality is required.
+                </div>
+          </div>
+          </div>
+      </div>  
+      <div class="row">
+          <div class="input-field col s10 m4 l4">
+              <i class="material-icons prefix">email</i>
+             <input  formControlName="email" id="email" type="email" class="validate">
+            <label for="email">Email</label>
+            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+            <div *ngIf="email.invalid && email.touched"
+            class="text alert alert-danger">
+                <div *ngIf="firstName.errors.required" class="text">
+                        Email is required.
+                </div>
+          </div>
+          
+          </div>
+          
+          <div class="input-field col s10 m4 l4">
+              <i class="material-icons prefix">phone</i>
+              <input  formControlName="telephone" id="Telephone" type="tel" class="validate">
+              <label for="Telephone">Telephone</label>
+              <div *ngIf="telephone.invalid && telephone.touched"
+              class="text alert alert-danger">
+                <div *ngIf="telephone.errors.required"  class="text">
+                        Telephone is required.
+                </div>
+                <div *ngIf="telephone.errors.minlength"  class="text">
+                        Telephone must be at least 8 characters long.
+                </div>
+          </div>
+            </div>
+            <div class="input-field col s10 m4 l4">
+                <select  formControlName="passengers" >
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Adult 1</option>
+                    <option value="2">Child 2</option>
+                    <option value="3">Infant 3</option>
+                  </select>
+                  <label>Passenger(s)</label>
+                  <div *ngIf="firstName.invalid && firstName.touched"
+                class="alert alert-danger">
+                <div *ngIf="passengers.errors.required"  class="text">
+                        passengers is required.
+                </div>
+          </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<section>
+    <div formGroupName="departureInformation">
+    <h5>Departure Information:</h5>
+    <div class="row">
+        <div class="input-field col s10 m4 l4">
+          <i class="material-icons prefix">date</i>
+          <input formControlName="date" id="Date" type="text" class="datepicker validate">
+          <label for="Date">Date</label>
+          <div *ngIf="date.invalid && date.touched"
+                class="alert alert-danger">
+                <div *ngIf="date.errors.required"  class="text">
+                        Date is required.
+                </div>
+          </div>
+        </div>
+        <div class="input-field col s10 m4 l4">
+            <i class="material-icons prefix"> date</i>
+            <input  formControlName="flexibleDate" id="FlexibleDate" type="text" class="datepicker validate">
+            <label for="FlexibleDate">Flexible Date</label>
+            <div *ngIf="flexibleDate.invalid && flexibleDate.touched"
+                class="alert alert-danger">
+                <div *ngIf="flexibleDate.errors.required"  class="text">
+                        Flexible Date is required.
+                </div>
+          </div>
+        </div>
+          <div class="input-field col s10 m4 l4">
+            <i class="material-icons prefix">city</i>
+            <input formControlName="airport"  id="Airport" type="text" class="validate">
+            <label for="Airport">Airport/City</label>
+            <div *ngIf="airport.invalid && airport.touched"
+                class="alert alert-danger">
+                <div *ngIf="airport.errors.required"  class="text">
+                        Airport/City is required.
+                </div>
+                <div *ngIf="airport.errors.minlength"  class="text">
+                        airport must be at least 1 characters long.
+                </div>
+            </div>
+          </div>
+      </div>   
+        </div>
+</section>
+
+<section>
+     <div formGroupName="extraInformation">
+    <h5>Extra Information:</h5>
+    <div class="row">
+        <div class="input-field col s10 m4 l4">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea  formControlName="comment" id="Comment" data-length="120" class="materialize-textarea"></textarea>
+            <label for="Comment">Comment</label>
+           
+          </div>
+          <div class="input-field col s10 m4 l4">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea formControlName="specialRequirement"  id="Requirement" data-length="120" class="materialize-textarea"></textarea>
+              <label for="Requirement">Special Requirement</label>
+              
+            </div>
+    </div>
+     </div>
+  </section>
+
+
+  </div>
+
+
+  <div class="modal-footer ">
+         <div *ngIf="searchEnquireForm.invalid">
+                <button type="submit" class="btn btn-success" disabled>Submit</button>
+            <!-- <a  type="submit" class="modal-close waves-effect waves-green btn-flat red">Submit</a> -->
+        </div>
+        <!-- <div *ngIf="searchEnquireForm.valid"> -->
+                <button type="submit" class="btn btn-success" >Submit</button>
+            <!-- <a  type="submit" class="modal-close waves-effect waves-green btn-flat red">Submit</a> -->
+        <!-- </div> -->
+</div>
+</div>
+  </form>
+
+  
