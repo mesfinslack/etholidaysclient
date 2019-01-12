@@ -15,6 +15,7 @@ export class SearchEnquireComponent implements OnInit {
   searchEnquireForm: FormGroup;
   // serachEnquireres:any;
   submitted = false;
+  date:any;
 
   constructor(
     private fb: FormBuilder, 

@@ -20,7 +20,6 @@ import { BeachComponent } from './components/main/top-destinations/south-africa/
 import { CapeTownComponent } from './components/main/top-destinations/south-africa/tours/cape-town/cape-town.component';
 import { NosyBeComponent } from './components/main/top-destinations/south-africa/beach/nosy-be/nosy-be.component';
 import { VictoriaComponent } from './components/main/top-destinations/south-africa/beach/victoria/victoria.component';
-import { SpecialsComponent } from './components/main/top-destinations/south-africa/specials/specials.component';
 import { SafariAndFallsComponent } from './components/main/top-destinations/south-africa/specials/safari-and-falls/safari-and-falls.component';
 import { SouthAfricaAndFallsComponent } from './components/main/top-destinations/south-africa/specials/south-africa-and-falls/south-africa-and-falls.component';
 import { WineAndGardenComponent } from './components/main/top-destinations/south-africa/specials/wine-and-garden/wine-and-garden.component';
@@ -83,7 +82,6 @@ const routes: Routes = [
   {path:"top-Destinations/south-africa/beach/cape-town",component:CapeTownComponent},
   {path:"top-Destinations/south-africa/beach/nosy-be",component:NosyBeComponent},
   {path:"top-Destinations/south-africa/beach/victoria",component:VictoriaComponent},
-  {path:"top-Destinations/south-africa/specials",component:SpecialsComponent},
   {path:"top-Destinations/south-africa/specials/safari-and-falls",component:SafariAndFallsComponent},
   {path:"top-Destinations/south-africa/specials/south-africa-and-falls",component:SouthAfricaAndFallsComponent},
   {path:"top-Destinations/south-africa/specials/wine-and-garden",component:WineAndGardenComponent},
@@ -101,7 +99,6 @@ const routes: Routes = [
   {path:"top-Destinations/east-africa/safari/kenya-safari-holidays",component:KenyaSafariHolidayComponent},
   {path:"top-Destinations/east-africa/safari/sleeping-with-elephants",component:SleepingWithElephantComponent},
   {path:"top-Destinations/east-africa/safari/tanzania-luxury",component:TanzaniaLuxuryComponent},
-  {path:"top-Destinations/east-africa/specials",component:SpecialsComponent},
   {path:"top-Destinations/east-africa/specials/gorilla-trekking",component:GorillaTrekkingComponent},
   {path:"top-Destinations/east-africa/specials/mount-kilimanjaro",component:MountKilimanjaroComponent},
   {path:"top-Destinations/east-africa/specials/wildlife-and-culture",component:WildlifeAndCultureComponent},

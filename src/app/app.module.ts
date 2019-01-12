@@ -56,8 +56,6 @@ import { RiftValleyTourComponent } from './components/main/top-destinations/ethi
 import { HawassaComponent } from './components/main/top-destinations/ethiopia/rift-valley-tour/hawassa/hawassa.component';
 import { SouthLeisureComponent } from './components/main/top-destinations/ethiopia/rift-valley-tour/south-leisure/south-leisure.component';
 import { RiftValleyComponent } from './components/main/top-destinations/ethiopia/rift-valley-tour/rift-valley/rift-valley.component';
-import { SpecialsComponent } from './components/main/top-destinations/south-africa/specials/specials.component';
-
 
 
 import { ToursComponent } from './components/main/top-destinations/south-africa/tours/tours.component';
@@ -70,6 +68,7 @@ import { SpaSeviceWithEthioCoffeeComponent } from './components/main/customized-
 import { NationalMusuemAndEthioCoffeeComponent } from './components/main/customized-tour/transit/national-musuem-and-ethio-coffee/national-musuem-and-ethio-coffee.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { TourPackageResultComponent } from './components/main/tour-package-result/tour-package-result.component';
+import { UtilitiesComponent } from './components/utilities/utilities.component';
 
 
 
@@ -110,7 +109,7 @@ import { TourPackageResultComponent } from './components/main/tour-package-resul
     CapeTownComponent,
     VictoriaComponent,
     NosyBeComponent,
-    SpecialsComponent,
+    
     CapeTownRelaxationComponent,
     SafariAndFallsComponent,
     SouthAfricaAndFallsComponent,
@@ -146,7 +145,8 @@ import { TourPackageResultComponent } from './components/main/tour-package-resul
     SpaSeviceWithEthioCoffeeComponent,
     NationalMusuemAndEthioCoffeeComponent,
     PrivacyPolicyComponent,
-    TourPackageResultComponent
+    TourPackageResultComponent,
+    UtilitiesComponent
   ],
   imports: [
     BrowserModule,

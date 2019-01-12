@@ -12,8 +12,8 @@ export class TopDestinationsComponent implements OnInit {
    bkimg2:string;
    bkimg3:string;
    video:string;
-  private topDestinationsImages:any;
-  private Destination:string;
+   topDestinationsImages:any;
+   Destination:string;
 
    constructor(private imageprovider:ImageProviderService,
     private router: Router,
